@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+:root {
+  --color-nutmeg: hsl(14, 45%, 36%);
+  --color-raspberry: hsl(332, 51%, 32%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-rose-white: hsl(330, 100%, 98%);
+  --color-eggshell: hsl(30, 54%, 90%);
+  --color-light-grey: hsl(30, 18%, 87%);
+  --color-wenge-brown: hsl(30, 10%, 34%);
+  --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  line-height: 1.4;
+}
+body {
+  background-color: var(--color-eggshell);
+  color: var(--color-wenge-brown);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+}
+h1,h2 {
+  font-family: "Young Serif", serif;
+}
+h1 {
+  color: var(--color-dark-charcoal);
+  font-size: 40px;
+}
+h2 {
+  color: var(--color-nutmeg);
+  margin-bottom: 15px;
+}
+.recipe-step {
+  margin: 10px 0;
+}
+.nutrition-step {
+  margin-top: 7px;
+}
+ul {
+  padding-left: 15px;
+}
+ul li::marker {
+  color: var(--color-nutmeg);
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li span {
+  color: var(--color-wenge-brown);
+  margin-left: 10px;
+  font-weight: 700;
+}
+hr {
+  margin: 20px 0;
+  border: 1px solid var(--color-light-grey);
+}
+.container {
+  margin: 15px;
+  max-width: 800px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+.container img {
+  margin: 25px 20px 25px 25px;
+  width: 750px;
+  border-radius: 10px;
+  height: 400px;
+}
+.recipe-prep-time h3 {
+  color: var(--color-raspberry);
+  margin-bottom: 20px;
+}
+.recipe-prep-time ul li::marker {
+  color: var(--color-raspberry);
+}
+.ingredients li {
+  margin-bottom: 10px;
+}
+.instructions .item {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.instructions .item .num {
+  color: var(--color-nutmeg);
+  margin-right: 10px;
+  font-weight: 700;
+}
+.instructions .item p span {
+  font-weight: 700;
+}
+.nutrition-step .values {
+  margin-bottom: 10px;
+}
+.nutrition-table .item {
+  padding: 20px 2px;
+  display: flex;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+.nutrition-table .item {
+  padding: 20px 20px;
+  display: flex;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+.nutrition-table .item:last-child {
+  border-bottom: 0;
+}
+.nutrition-table .item p:nth-child(2) {
+  color: var(--color-nutmeg);
+  font-weight: 700;
+}
+.nutrition-table .item>* {
+  width: 100px;
+  margin-right: auto;
+}
+.recipe-information {
+  padding: 0px 30px 30px 30px;
+}
+.instructions .item {
+  display: flex;
+}
